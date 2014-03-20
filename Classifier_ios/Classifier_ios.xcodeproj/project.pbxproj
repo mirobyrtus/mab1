@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AC59D4D13F83431006598F6 /* ImageClassifierImplementation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8AC59D4C13F83431006598F6 /* ImageClassifierImplementation.mm */; };
+		8AC59D5013F83431006598F6 /* OpencvClassifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AC59D4F13F83431006598F6 /* OpencvClassifier.cpp */; };
+		8AF4D5FD13F430F5007944D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF4D5FC13F430F5007944D5 /* UIKit.framework */; };
+		8AF4D5FF13F430F5007944D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF4D5FE13F430F5007944D5 /* Foundation.framework */; };
+		8AF4D60113F430F5007944D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF4D60013F430F5007944D5 /* CoreGraphics.framework */; };
+		8AF4D60713F430F5007944D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AF4D60513F430F5007944D5 /* InfoPlist.strings */; };
+		8AF4D60913F430F5007944D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4D60813F430F5007944D5 /* main.m */; };
+		8AF4D60D13F430F5007944D5 /* ClassifierAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4D60C13F430F5007944D5 /* ClassifierAppDelegate.m */; };
+		8AF4D61013F430F6007944D5 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF4D60E13F430F6007944D5 /* MainStoryboard_iPhone.storyboard */; };
+		8AF4D61613F430F6007944D5 /* ClassifierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4D61513F430F6007944D5 /* ClassifierViewController.m */; };
+		9A333D2F1831B45500361D35 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A333D2E1831B45500361D35 /* opencv2.framework */; };
+		9A6FA7091846AD3700C86588 /* classifiersave.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9A6FA7071846AD3700C86588 /* classifiersave.txt */; };
+		9A6FA70A1846AD3700C86588 /* dictionary.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9A6FA7081846AD3700C86588 /* dictionary.yml */; };
+		9A89056D18304982002CFE8E /* imagepicker.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A89056C18304982002CFE8E /* imagepicker.png */; };
+		9AABC7E818AA837D00BD2F3F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AABC7E718AA837D00BD2F3F /* SVProgressHUD.m */; };
+		9AABC7ED18AA8A4800BD2F3F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AABC7EC18AA8A4800BD2F3F /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8AC59D4B13F83431006598F6 /* ImageClassifierImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageClassifierImplementation.h; sourceTree = "<group>"; };
+		8AC59D4C13F83431006598F6 /* ImageClassifierImplementation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageClassifierImplementation.mm; sourceTree = "<group>"; };
+		8AC59D4F13F83431006598F6 /* OpencvClassifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpencvClassifier.cpp; sourceTree = "<group>"; };
+		8AC59D5113F83431006598F6 /* OpencvClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpencvClassifier.h; sourceTree = "<group>"; };
+		8AF4D5F813F430F5007944D5 /* Classifier_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Classifier_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF4D5FC13F430F5007944D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8AF4D5FE13F430F5007944D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8AF4D60013F430F5007944D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8AF4D60413F430F5007944D5 /* Classifier_ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Classifier_ios-Info.plist"; sourceTree = "<group>"; };
+		8AF4D60613F430F5007944D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8AF4D60813F430F5007944D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8AF4D60B13F430F5007944D5 /* ClassifierAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifierAppDelegate.h; sourceTree = "<group>"; };
+		8AF4D60C13F430F5007944D5 /* ClassifierAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifierAppDelegate.m; sourceTree = "<group>"; };
+		8AF4D60F13F430F6007944D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		8AF4D61413F430F6007944D5 /* ClassifierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifierViewController.h; sourceTree = "<group>"; };
+		8AF4D61513F430F6007944D5 /* ClassifierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifierViewController.m; sourceTree = "<group>"; };
+		8AF4D61C13F4316B007944D5 /* ImageClassifierProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageClassifierProtocol.h; sourceTree = "<group>"; };
+		9A333D2E1831B45500361D35 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../opencv2.framework; sourceTree = "<group>"; };
+		9A3CE111189470EF000CC90A /* Classifier_ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Classifier_ios-Prefix.pch"; sourceTree = "<group>"; };
+		9A6FA7071846AD3700C86588 /* classifiersave.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = classifiersave.txt; sourceTree = "<group>"; };
+		9A6FA7081846AD3700C86588 /* dictionary.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.yml; sourceTree = "<group>"; };
+		9A89056C18304982002CFE8E /* imagepicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagepicker.png; sourceTree = "<group>"; };
+		9AABC7E618AA837D00BD2F3F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		9AABC7E718AA837D00BD2F3F /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		9AABC7EC18AA8A4800BD2F3F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AF4D5F513F430F5007944D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AABC7ED18AA8A4800BD2F3F /* QuartzCore.framework in Frameworks */,
+				9A333D2F1831B45500361D35 /* opencv2.framework in Frameworks */,
+				8AF4D5FD13F430F5007944D5 /* UIKit.framework in Frameworks */,
+				8AF4D5FF13F430F5007944D5 /* Foundation.framework in Frameworks */,
+				8AF4D60113F430F5007944D5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AF4D5ED13F430F5007944D5 = {
+			isa = PBXGroup;
+			children = (
+				9A6FA7061846AD0C00C86588 /* TrainedData */,
+				8AF4D60213F430F5007944D5 /* Classifier_ios */,
+				8AF4D5FB13F430F5007944D5 /* Frameworks */,
+				8AF4D5F913F430F5007944D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AF4D5F913F430F5007944D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AF4D5F813F430F5007944D5 /* Classifier_ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AF4D5FB13F430F5007944D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AABC7EC18AA8A4800BD2F3F /* QuartzCore.framework */,
+				9A333D2E1831B45500361D35 /* opencv2.framework */,
+				8AF4D5FC13F430F5007944D5 /* UIKit.framework */,
+				8AF4D5FE13F430F5007944D5 /* Foundation.framework */,
+				8AF4D60013F430F5007944D5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AF4D60213F430F5007944D5 /* Classifier_ios */ = {
+			isa = PBXGroup;
+			children = (
+				9AABC7EA18AA83BB00BD2F3F /* OpenCV */,
+				9AABC7E518AA836E00BD2F3F /* Views */,
+				9A89056C18304982002CFE8E /* imagepicker.png */,
+				8AF4D60B13F430F5007944D5 /* ClassifierAppDelegate.h */,
+				8AF4D60C13F430F5007944D5 /* ClassifierAppDelegate.m */,
+				8AF4D60E13F430F6007944D5 /* MainStoryboard_iPhone.storyboard */,
+				8AF4D61413F430F6007944D5 /* ClassifierViewController.h */,
+				8AF4D61513F430F6007944D5 /* ClassifierViewController.m */,
+				8AF4D60313F430F5007944D5 /* Supporting Files */,
+			);
+			path = Classifier_ios;
+			sourceTree = "<group>";
+		};
+		8AF4D60313F430F5007944D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AF4D60413F430F5007944D5 /* Classifier_ios-Info.plist */,
+				8AF4D60513F430F5007944D5 /* InfoPlist.strings */,
+				9A3CE111189470EF000CC90A /* Classifier_ios-Prefix.pch */,
+				8AF4D60813F430F5007944D5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A6FA7061846AD0C00C86588 /* TrainedData */ = {
+			isa = PBXGroup;
+			children = (
+				9A6FA7071846AD3700C86588 /* classifiersave.txt */,
+				9A6FA7081846AD3700C86588 /* dictionary.yml */,
+			);
+			name = TrainedData;
+			sourceTree = "<group>";
+		};
+		9AABC7E518AA836E00BD2F3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AABC7E618AA837D00BD2F3F /* SVProgressHUD.h */,
+				9AABC7E718AA837D00BD2F3F /* SVProgressHUD.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9AABC7EA18AA83BB00BD2F3F /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				9AABC7EB18AA83D000BD2F3F /* Protocols */,
+				8AC59D4F13F83431006598F6 /* OpencvClassifier.cpp */,
+				8AC59D5113F83431006598F6 /* OpencvClassifier.h */,
+			);
+			name = OpenCV;
+			sourceTree = "<group>";
+		};
+		9AABC7EB18AA83D000BD2F3F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8AF4D61C13F4316B007944D5 /* ImageClassifierProtocol.h */,
+				8AC59D4B13F83431006598F6 /* ImageClassifierImplementation.h */,
+				8AC59D4C13F83431006598F6 /* ImageClassifierImplementation.mm */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AF4D5F713F430F5007944D5 /* Classifier_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF4D61913F430F6007944D5 /* Build configuration list for PBXNativeTarget "Classifier_ios" */;
+			buildPhases = (
+				8AF4D5F413F430F5007944D5 /* Sources */,
+				8AF4D5F513F430F5007944D5 /* Frameworks */,
+				8AF4D5F613F430F5007944D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Classifier_ios;
+			productName = iOSplusOpenCV;
+			productReference = 8AF4D5F813F430F5007944D5 /* Classifier_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AF4D5EF13F430F5007944D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 8AF4D5F213F430F5007944D5 /* Build configuration list for PBXProject "Classifier_ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8AF4D5ED13F430F5007944D5;
+			productRefGroup = 8AF4D5F913F430F5007944D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AF4D5F713F430F5007944D5 /* Classifier_ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AF4D5F613F430F5007944D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6FA7091846AD3700C86588 /* classifiersave.txt in Resources */,
+				8AF4D60713F430F5007944D5 /* InfoPlist.strings in Resources */,
+				9A89056D18304982002CFE8E /* imagepicker.png in Resources */,
+				9A6FA70A1846AD3700C86588 /* dictionary.yml in Resources */,
+				8AF4D61013F430F6007944D5 /* MainStoryboard_iPhone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AF4D5F413F430F5007944D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF4D60913F430F5007944D5 /* main.m in Sources */,
+				8AF4D60D13F430F5007944D5 /* ClassifierAppDelegate.m in Sources */,
+				8AF4D61613F430F6007944D5 /* ClassifierViewController.m in Sources */,
+				8AC59D4D13F83431006598F6 /* ImageClassifierImplementation.mm in Sources */,
+				8AC59D5013F83431006598F6 /* OpencvClassifier.cpp in Sources */,
+				9AABC7E818AA837D00BD2F3F /* SVProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8AF4D60513F430F5007944D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AF4D60613F430F5007944D5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8AF4D60E13F430F6007944D5 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AF4D60F13F430F6007944D5 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AF4D61713F430F6007944D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/externalLibs/boost/include",
+					"$(SRCROOT)/externalLibs/opencv/include/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/externalLibs/opencv/include/**";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Classifier_ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AF4D61813F430F6007944D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/externalLibs/boost/include",
+					"$(SRCROOT)/externalLibs/opencv/include/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/externalLibs/opencv/include/**";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Classifier_ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AF4D61A13F430F6007944D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/computer/Development/ios/opencv,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classifier_ios/Classifier_ios-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/externalLibs/boost/include",
+					"$(SRCROOT)/externalLibs/opencv/include/**",
+					"/opt/local/include/opencv/**",
+					/opt/local/include/opencv2,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Classifier_ios/Classifier_ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Classifier_ios;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8AF4D61B13F430F6007944D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/computer/Development/ios/opencv,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classifier_ios/Classifier_ios-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/externalLibs/boost/include",
+					"$(SRCROOT)/externalLibs/opencv/include/**",
+					"/opt/local/include/opencv/**",
+					/opt/local/include/opencv2,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Classifier_ios/Classifier_ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Classifier_ios;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AF4D5F213F430F5007944D5 /* Build configuration list for PBXProject "Classifier_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF4D61713F430F6007944D5 /* Debug */,
+				8AF4D61813F430F6007944D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF4D61913F430F6007944D5 /* Build configuration list for PBXNativeTarget "Classifier_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF4D61A13F430F6007944D5 /* Debug */,
+				8AF4D61B13F430F6007944D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AF4D5EF13F430F5007944D5 /* Project object */;
+}
